@@ -77,8 +77,11 @@ env -i bash
 
 > [!TIP]
 > Найти исполняемый файла *bash* можно с помощью команды `whereis bash`.
+Пример:
 ```
 whereis bash
 bash: /usr/bin/bash /bin/bash /usr/share/bash /usr/share/man/man1/bash.1.gz /usr/share/info/bash.info.gz
 ```
+Для отладки скрипта можно вызвать его с помощью команды `bash -x script.sh` или заранее прописать в *shebang* следующим образом: `#!/bin/bash -x`.
+
 
