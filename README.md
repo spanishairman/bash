@@ -70,3 +70,15 @@ env -i bash
   - `[xyz]` - любой из символов;
   - `[^xyz]` - исключаемые символы;
   - `*` - любое кол-во символов.
+
+#### Bash скрипты
+
+  - **Shebang** - указывет интерпретатор скрипта и выглядит так: `#!/bin/bash` или `#!/bin/sh` или, например, так: `#!/usr/bin/python`. 
+
+> [!TIP]
+> Найти исполняемый файла *bash* можно с помощью команды `whereis bash`.
+```
+whereis bash
+bash: /usr/bin/bash /bin/bash /usr/share/bash /usr/share/man/man1/bash.1.gz /usr/share/info/bash.info.gz
+```
+
