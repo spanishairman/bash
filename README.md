@@ -271,7 +271,7 @@ echo ' Кол-во Код ответа';
 echo "${array[*]}" | grep -v "::1" | awk '{print $12}' | sort -g | uniq -c -d | sort -gr | head -n 5;
 echo "$brd";
 )
-echo "$smail" | mail -r max@akbars.ru -s "Отчёт о работе веб сервера по состоянию на $(date +"%F %H:%M:%S")" muzaik@yandex.ru
+echo "$smail" | mail -r max@company.ru -s "Отчёт о работе веб сервера по состоянию на $(date +"%F %H:%M:%S")" username@yandex.ru
 exit 0
 
 ```
