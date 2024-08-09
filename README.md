@@ -365,4 +365,13 @@ echo "${array[*]}" | grep -v "::1" | awk '{print $9}' | sort -g | uniq -c -d | s
     360 302
 ------------------------------------------------------------------------
 ```
+Для того, чтобы ограничить запуск скрипта одним экземпляром в ***cron***, будем вызывать его с испольтзованием утилиты flock:
+```
+/usr/bin/flock -xn /tmp/mgetlog.lock -c 'bash /home/max/mgetlog.sh'
+```
+Пример для запуска скрипта в 5 минут каждого часа:
+```
+05 * * * * /usr/bin/flock -xn /tmp/mgetlog.lock -c 'bash /home/max/mgetlog.sh'
+```
+
 Спасибо за прочтение! :potted_plant:
