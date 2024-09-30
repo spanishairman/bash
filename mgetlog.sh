@@ -31,4 +31,4 @@ echo "$brd";
 echo "$smail" | mail -r max@firma.com -s "Отчёт о работе веб сервера по состоянию на $(date +"%F %H:%M:%S")" noname@yandex.ru
 exit 0
 
-# echo "some text here to send it...." | mail -r max@akbars.ru -s "My_subject_is_here" muzaik@yandex.ru
+# echo "some text here to send it...." | mail -r max@firma.com -s "My_subject_is_here" noname@yandex.ru
